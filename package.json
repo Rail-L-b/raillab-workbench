@@ -1,6 +1,6 @@
 {
   "name": "raillab-workbench",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Interactive incident playground for RailLab: runs the real scenario engine and reference clients in the browser.",
   "license": "MIT",
