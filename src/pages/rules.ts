@@ -25,7 +25,7 @@ export const rulesPage: Route = {
       h(
         "div",
         { class: "wrap" },
-        pageHead("Rules", `The engine checks every run against ${RULES.length} rules. A SEP-24 requirement follows from the specification text. An application policy is a choice about robust behavior that no standard requires, so you can tell a bug from a preference.`),
+        pageHead("Rules", `The engine checks every run against ${RULES.length} rules. A SEP-24 requirement follows from the specification text. An application policy is a defensive choice that no standard requires, so you can tell a bug from a preference.`),
         h("div", { class: "card-grid" }, ...items),
       ),
     );
