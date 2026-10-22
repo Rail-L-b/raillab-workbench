@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raillab-workbench-anasamasama.vercel.app/sitemap.xml

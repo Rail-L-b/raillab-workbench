@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="RailLab: reproduce SEP-24 wallet incidents with a deterministic anchor simulator">
+  <rect width="1200" height="630" fill="#f4f8f5"/>
+  <rect x="0" y="0" width="1200" height="14" fill="#2e9d57"/>
+  <g transform="translate(90 110) scale(5)">
+    <rect width="32" height="32" rx="7" fill="#14532d"/>
+    <path d="M11 5 8 27M21 5l3 22" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M10 11h12M9 17h14M8.4 23h15.2" stroke="#7bd9a0" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  </g>
+  <text x="290" y="215" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="96" font-weight="700" fill="#14532d">RailLab</text>
+  <text x="90" y="360" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="46" fill="#1d2433">Reproduce SEP-24 wallet incidents</text>
+  <text x="90" y="422" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="46" fill="#1d2433">with a deterministic anchor simulator.</text>
+  <text x="90" y="540" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" fill="#14532d">same scenario + same seed = same timeline</text>
+  <text x="90" y="585" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="26" fill="#4b5563">Simulated anchor. Nothing touches a real bank or the Stellar network.</text>
+</svg>
