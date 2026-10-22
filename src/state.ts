@@ -24,7 +24,9 @@ import pairing from "../vendor/pairing.json";
 
 export const PAIRING = pairing;
 
-export const SCENARIOS: Array<{ name: string; title: string; json: string }> = [baseline, delayed, reordered, transient, stale, mismatched, everything].map((s) => ({
+export const SCENARIO_DOCS = [baseline, delayed, reordered, transient, stale, mismatched, everything];
+
+export const SCENARIOS: Array<{ name: string; title: string; json: string }> = SCENARIO_DOCS.map((s) => ({
   name: s.name,
   title: s.title,
   json: JSON.stringify(s, null, 2),
@@ -42,6 +44,8 @@ export const CLIENTS: ClientDef[] = [
   { id: "defective", label: "Defective reference client", note: "Announces completion early, trusts any response, applies stale statuses, repeats side effects, gives up on any error.", consumer: defectiveConsumer },
   ...Object.entries(MUTANTS).map(([key, m]) => ({ id: `mutant:${key}`, label: `Corrected client without ${key}`, note: `Exactly one behavior removed. Should fail: ${m.breaks}.`, consumer: m.consumer })),
 ];
+
+export const MUTANT_COUNT = Object.keys(MUTANTS).length;
 
 export type RunOutcome = { ok: true; session: Session; scenario: Scenario } | { ok: false; error: string };
 

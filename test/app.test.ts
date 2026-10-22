@@ -2,7 +2,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { runConfig, SCENARIOS } from "../src/state.ts";
 
 async function boot() {
-  document.body.innerHTML = '<main id="app"></main>';
+  document.body.innerHTML = '<div id="root"></div>';
+  window.history.replaceState(null, "", "/app");
   vi.resetModules();
   await import("../src/main.ts");
 }
