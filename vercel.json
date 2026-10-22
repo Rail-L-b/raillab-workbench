@@ -1,6 +1,7 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist",
+  "rewrites": [{ "source": "/((?!assets/|favicon|og-image|robots.txt|sitemap.xml).*)", "destination": "/index.html" }],
   "headers": [
     {
       "source": "/(.*)",
